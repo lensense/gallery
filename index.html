@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/photoswipe@5/dist/photoswipe.css" rel="stylesheet" />
+  <style>
+    body {
+      background: #111;
+      color: #fff;
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    h2 {
+      margin-top: 40px;
+      border-bottom: 1px solid #444;
+    }
+    .gallery {
+      column-count: 4;
+      column-gap: 10px;
+    }
+    .gallery a {
+      display: inline-block;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      display: block;
+    }
+    @media (max-width: 1024px) {
+      .gallery { column-count: 2; }
+    }
+    @media (max-width: 600px) {
+      .gallery { column-count: 1; }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Lens gallery</h1>
+
+<section>
+<h2>19-07-2025</h2>
+<div class='gallery'>
+<a href="images/19-07-2025/P1015551.jpg" data-pswp-width="5184" data-pswp-height="2920" target="_blank"><img src="images/19-07-2025/P1015551.jpg" alt=""></a>
+<a href="images/19-07-2025/P1015553.jpg" data-pswp-width="5184" data-pswp-height="2920" target="_blank"><img src="images/19-07-2025/P1015553.jpg" alt=""></a>
+<a href="images/19-07-2025/P1015555.jpg" data-pswp-width="4376" data-pswp-height="2465" target="_blank"><img src="images/19-07-2025/P1015555.jpg" alt=""></a>
+<a href="images/19-07-2025/P1015556.jpg" data-pswp-width="2920" data-pswp-height="5184" target="_blank"><img src="images/19-07-2025/P1015556.jpg" alt=""></a>
+<a href="images/19-07-2025/P1015557.jpg" data-pswp-width="2920" data-pswp-height="5184" target="_blank"><img src="images/19-07-2025/P1015557.jpg" alt=""></a>
+<a href="images/19-07-2025/P1015558.jpg" data-pswp-width="5184" data-pswp-height="2920" target="_blank"><img src="images/19-07-2025/P1015558.jpg" alt=""></a>
+<a href="images/19-07-2025/P1015561.jpg" data-pswp-width="3840" data-pswp-height="2160" target="_blank"><img src="images/19-07-2025/P1015561.jpg" alt=""></a>
+<a href="images/19-07-2025/P1015562.jpg" data-pswp-width="5184" data-pswp-height="2920" target="_blank"><img src="images/19-07-2025/P1015562.jpg" alt=""></a>
+<a href="images/19-07-2025/P1015566.jpg" data-pswp-width="2347" data-pswp-height="4167" target="_blank"><img src="images/19-07-2025/P1015566.jpg" alt=""></a>
+<a href="images/19-07-2025/P1015569.jpg" data-pswp-width="5184" data-pswp-height="2920" target="_blank"><img src="images/19-07-2025/P1015569.jpg" alt=""></a>
+<a href="images/19-07-2025/P1015571.jpg" data-pswp-width="5184" data-pswp-height="2920" target="_blank"><img src="images/19-07-2025/P1015571.jpg" alt=""></a>
+<a href="images/19-07-2025/P1015572.jpg" data-pswp-width="2920" data-pswp-height="5184" target="_blank"><img src="images/19-07-2025/P1015572.jpg" alt=""></a>
+<a href="images/19-07-2025/P1015573.jpg" data-pswp-width="2920" data-pswp-height="5184" target="_blank"><img src="images/19-07-2025/P1015573.jpg" alt=""></a>
+<a href="images/19-07-2025/P1015576.jpg" data-pswp-width="5184" data-pswp-height="3888" target="_blank"><img src="images/19-07-2025/P1015576.jpg" alt=""></a>
+<a href="images/19-07-2025/P1015578.jpg" data-pswp-width="5184" data-pswp-height="2920" target="_blank"><img src="images/19-07-2025/P1015578.jpg" alt=""></a>
+<a href="images/19-07-2025/P1015584.jpg" data-pswp-width="5184" data-pswp-height="2920" target="_blank"><img src="images/19-07-2025/P1015584.jpg" alt=""></a>
+<a href="images/19-07-2025/P1015586.jpg" data-pswp-width="5184" data-pswp-height="2920" target="_blank"><img src="images/19-07-2025/P1015586.jpg" alt=""></a>
+<a href="images/19-07-2025/P1015588.jpg" data-pswp-width="5184" data-pswp-height="2920" target="_blank"><img src="images/19-07-2025/P1015588.jpg" alt=""></a>
+<a href="images/19-07-2025/P1015589.jpg" data-pswp-width="5184" data-pswp-height="2920" target="_blank"><img src="images/19-07-2025/P1015589.jpg" alt=""></a>
+<a href="images/19-07-2025/P1015591.jpg" data-pswp-width="5184" data-pswp-height="2920" target="_blank"><img src="images/19-07-2025/P1015591.jpg" alt=""></a>
+<a href="images/19-07-2025/P1015592.jpg" data-pswp-width="5184" data-pswp-height="2920" target="_blank"><img src="images/19-07-2025/P1015592.jpg" alt=""></a>
+</div>
+</section>
+
+
+<script type="module">
+  import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.esm.js';
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: '.gallery',
+    children: 'a',
+    pswpModule: () => import('https://unpkg.com/photoswipe@5/dist/photoswipe.esm.js')
+  });
+  lightbox.init();
+</script>
+
+</body>
+</html>
